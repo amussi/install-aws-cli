@@ -1,0 +1,10 @@
+# run-instance
+
+# run a RH7.1 instance
+aws ec2 run-instances --image-id ami-12663b7a --key myprimarykey --instance-type t2.micro 
+
+# terminate-instances
+aws ec2 terminate-instances --instance-id i-73891c9a
+
+# security group
+aws ec2 create-security-group --group-name sshConnectFromDesktop --description "Allow SSH from desktop" 
